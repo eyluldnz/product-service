@@ -1,2 +1,11 @@
 ### Get Health Check
-GET http://localhost:3000/api/health
+GET http://localhost:3000/api/health/get
+
+###Create new product
+POST http://localhost:3000/api/create/v1/product
+content-type: application/json
+
+{
+    "productName":"Hi nest",
+    "price":2
+} 
