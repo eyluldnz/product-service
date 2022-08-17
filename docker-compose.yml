@@ -1,0 +1,14 @@
+version: '3'
+services:
+  product-service:
+    build: 
+      context:.
+      dockerfile:Dockerfile.local
+    container_name: product-service
+    ports:
+      - '3000:3000'
+      - '9229:9229'
+    depends_on:
+      - mongo
+    volumes:
+      -
